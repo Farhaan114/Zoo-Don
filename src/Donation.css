@@ -1,0 +1,76 @@
+.donation-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    
+  }
+  
+.title{
+    display: flex;
+    align-items: center;
+}
+  .donation-content {
+    display: flex; /* Use flexbox for layout */
+    margin-top: 20px;
+  }
+  
+  .donation-form-section {
+    flex: 1; /* Takes up half the width */
+    padding: 20px;
+    border-right: 2px solid grey; /* Optional: Adds a divider */
+    border-radius: 5px;
+  }
+  
+  .top-donor-section {
+    flex: 1; /* Takes up half the width */
+    padding: 20px;
+    font-weight: 600;
+    color: rgb(248, 237, 237);
+  }
+  
+  .donation-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .donation-form input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .donate {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745; /* Bootstrap's success color */
+    color: white;
+    cursor: pointer;
+  }
+  
+  .donation-form button:hover {
+    background-color: #218838; /* Darker shade on hover */
+  }
+  
+
+  /* Glass Effect for Donation Form and Donor Dashboard */
+.donation-form-section,
+.top-donor-section {
+  flex: 1; /* Takes up half the width */
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners */
+ 
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Soft shadow */
+}
+
+.donation-form {
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent background for the form */
+  backdrop-filter: blur(10px); /* Blur the background behind the form */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Add padding inside the form */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}

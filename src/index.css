@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(51, 22, 22);
+  color: #333;
+  background-image: url(https://img.freepik.com/premium-photo/world-wildlife-by-animals-earth-wildlife-concept-environment-day-world-habitat-wildlife-day-3rd-march-21th-world-day-endangered-species-world-forest-biodiversity-day_974729-144687.jpg?w=740);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  font-family: "Afacad Flux";
+}
+
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #2a2a2e;
+  padding: 1rem;
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.navbar ul li {
+  margin-left: 20px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* Main Sections */
+.home-container, .almanac-container {
+  padding: 2rem;
+}
+
+.about-section {
+  margin-bottom: 2rem;
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners */
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Blur the background */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Slight border for definition */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.about-section h1 {
+  font-size: 2.5rem;
+}
+
+.about-section p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.home-container{
+  color:rgb(37, 22, 73);
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  padding: 20px;
+  max-width: 1200px; /* Optional: Limit max width */
+  margin: 0 auto; /* Center horizontally */
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Blur the background */
+  border-radius: 10px; /* Rounded corners */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Slight border for definition */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Soft shadow */
+}
+
+/* Donation Form */
+
+
+/* Animal Cards */
+.animal-card {
+  background-color: aliceblue;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 250px;
+}
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Dashboard */
+.dashboard {
+  margin-top: 20px;
+}
+
+/* Footer */
+footer {
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar ul li {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .about-section h1 {
+    font-size: 2rem;
+  }
+
+  .about-section p {
+    font-size: 1rem;
+  }
+
+  .donation-form input, .donation-form button {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .animal-card {
+    width: 100%;
+  }
+
+  .card-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar .logo {
+    font-size: 1.2rem;
+  }
+
+  .navbar ul li a {
+    font-size: 0.9rem;
+  }
+
+  .about-section h1 {
+    font-size: 1.8rem;
+  }
+
+  .about-section p {
+    font-size: 0.9rem;
+  }
+}
+
+.donation-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.donation-content {
+  display: flex; /* Use flexbox for layout */
+  margin-top: 20px;
+}
+
+.donation-form-section {
+  flex: 1; /* Takes up half the width */
+  padding: 20px;
+  border-right: 1px solid #ddd; /* Optional: Adds a divider */
+}
+
+.top-donor-section {
+  flex: 1; /* Takes up half the width */
+  padding: 20px;
+}
+
+
